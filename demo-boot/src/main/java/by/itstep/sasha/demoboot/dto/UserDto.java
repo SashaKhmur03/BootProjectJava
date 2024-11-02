@@ -10,12 +10,16 @@ import lombok.NoArgsConstructor;
 public class UserDto {
     private String firstName;
     private String lastName;
-    private String phoneNumber;
+    private String username;
+    private String password;
     private String email;
+    private String phoneNumber;
 
-    public UserDto(String firstName, String lastName, String email) {
+    public UserDto(String firstName, String lastName, String username, String email, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.username = username;
+        this.phoneNumber = phoneNumber;
     }
 }
